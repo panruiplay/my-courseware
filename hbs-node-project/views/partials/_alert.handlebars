@@ -1,0 +1,16 @@
+<div class="container-full">
+    {{#if error_msg}}
+        <div class="alert alert-danger" style="border-radius: 0">
+            <div class="container" style="text-align: center;">
+                {{error_msg}}
+            </div>
+        </div>
+    {{/if}}
+    {{#if success_msg}}
+        <div class="alert alert-success" style="border-radius: 0">
+            <div class="container" style="text-align: center;">
+                {{success_msg}}
+            </div>
+        </div>
+    {{/if}}
+</div>
