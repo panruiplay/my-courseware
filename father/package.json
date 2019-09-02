@@ -35,7 +35,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm run test",
-      "post-commit": "echo 11111",
+      "post-commit": "npm run changelog && git add CHANGELOG.md",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS -x @commitlint/config-conventional"
     }
   }
