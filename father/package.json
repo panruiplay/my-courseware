@@ -28,13 +28,14 @@
     "doc:build": "father doc build",
     "build": "father build",
     "test": "echo success && exit 0",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "-split-": "---------- 我是华丽的分割线 ----------",
     "prepublishOnly": "npm run test && npm run build"
   },
   "husky": {
     "hooks": {
       "pre-commit": "npm run test",
+      "post-commit": "echo 11111",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS -x @commitlint/config-conventional"
     }
   }
