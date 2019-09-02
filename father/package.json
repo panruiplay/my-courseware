@@ -30,8 +30,7 @@
     "test": "echo success && exit 0",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "-split-": "---------- 我是华丽的分割线 ----------",
-    "prepublishOnly": "npm run test && npm run build",
-    "postpublish": "npm run changelog && git add CHANGELOG.md && git commit -m \"chore: changelog\" && git push"
+    "prepublishOnly": "npm run test && npm run build"
   },
   "husky": {
     "hooks": {
