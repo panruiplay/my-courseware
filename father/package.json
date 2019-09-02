@@ -24,7 +24,7 @@
     "doc:dev": "father doc dev",
     "doc:build": "father doc build",
     "build": "father build",
-    "test": "echo test success",
+    "test": "ec123123ho success && exit 0",
     "-split-": "---------- 我是华丽的分割线 ----------",
     "prepublish": "npm run test && npm run build"
   },
