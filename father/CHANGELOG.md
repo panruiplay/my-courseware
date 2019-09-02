@@ -1,6 +1,11 @@
 ## 1.0.5 (2019-09-02)
 
 
+### Bug Fixes
+
+* **cli:** test1 ([c7e08ef](https://github.com/panruiplay/my-courseware/commit/c7e08ef))
+
+
 ### Features
 
 * **cli:** 添加了changelog自动生成工具 ([01e51b5](https://github.com/panruiplay/my-courseware/commit/01e51b5))
