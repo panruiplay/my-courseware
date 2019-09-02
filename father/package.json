@@ -13,6 +13,7 @@
     "classnames": "^2.2.6"
   },
   "devDependencies": {
+    "commitlint": "^8.1.0",
     "father": "^2.17.0",
     "husky": "^3.0.5"
   },
@@ -27,6 +28,7 @@
     "test": "echo success && exit 0",
     "-split-": "---------- 我是华丽的分割线 ----------",
     "prepublishOnly": "npm run test && npm run build",
-    "precommit": "npm run test"
+    "precommit": "npm run test",
+    "commit-msg": "commitlint"
   }
 }
