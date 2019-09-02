@@ -10,11 +10,11 @@
     "dist"
   ],
   "dependencies": {
-    "classnames": "^2.2.6",
-    "pre-commit": "^1.2.2"
+    "classnames": "^2.2.6"
   },
   "devDependencies": {
-    "father": "^2.17.0"
+    "father": "^2.17.0",
+    "husky": "^3.0.5"
   },
   "peerDependencies": {
     "react": "^16.9.0"
@@ -26,9 +26,7 @@
     "build": "father build",
     "test": "echo success && exit 0",
     "-split-": "---------- 我是华丽的分割线 ----------",
-    "prepublishOnly": "npm run test && npm run build"
-  },
-  "pre-commit": [
-    "test"
-  ]
+    "prepublishOnly": "npm run test && npm run build",
+    "precommit": "npm run test"
+  }
 }
