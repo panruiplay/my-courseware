@@ -1,6 +1,17 @@
 {
+  "name": "rio-test-fater",
+  "version": "1.0.3",
+  "main": "./dist/index.js",
+  "module": "./dist/index.esm.js",
+  "unpkg": "./dist/index.umd.js",
+  "browser": "./dist/index.umd.js",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
-    "classnames": "^2.2.6"
+    "classnames": "^2.2.6",
+    "pre-commit": "^1.2.2"
   },
   "devDependencies": {
     "father": "^2.17.0"
@@ -12,6 +23,12 @@
   "scripts": {
     "doc:dev": "father doc dev",
     "doc:build": "father doc build",
-    "build": "father build"
-  }
+    "build": "father build",
+    "test": "echo test success",
+    "-split-": "---------- 我是华丽的分割线 ----------",
+    "prepublish": "npm run test && npm run build"
+  },
+  "pre-commit": [
+    "test"
+  ]
 }
