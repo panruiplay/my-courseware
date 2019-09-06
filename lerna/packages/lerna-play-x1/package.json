@@ -1,0 +1,22 @@
+{
+  "name": "lerna-play-x1",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "rui.pan <rui.pan@aihuishou.com>",
+  "homepage": "https://github.com/panruiplay/my-courseware#readme",
+  "license": "MIT",
+  "main": "lib/lerna-play-x1.js",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panruiplay/my-courseware.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/panruiplay/my-courseware/issues"
+  }
+}
