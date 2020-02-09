@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./lib/vue@2.6.11.min.js"></script>
+    <script src="./lib/axios.min.js"></script>
+    <script src="./lib/element-ui.min.js"></script>
+    <link rel="stylesheet" href="lib/element-ui.min.css">
+</head>
+<body>
+
+<div id="app">
+    <p>
+        <input type="file" @change="handleFileChange">
+    </p>
+    <p>
+        切片数量：<input type="number" min="1" v-model="chunkSize">
+    </p>
+    <p>
+        <el-button type="primary" @click="uploadFile">上传文件到服务器</el-button>
+    </p>
+</div>
+
+<script src="./index.js"></script>
+
+</body>
+</html>
