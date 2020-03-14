@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -77,4 +78,4 @@ app.post('/merge', async function (req, res) {
 
 app.use(exStatic(path.resolve(__dirname, '../Frontend')));
 
-app.listen(8888, function () {});
+app.listen(process.env.APP_PORT, function () {});
