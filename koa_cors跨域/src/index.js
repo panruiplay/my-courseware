@@ -1,7 +1,5 @@
 require('dotenv').config();
-const path = require('path');
 const koa = require('koa');
-const static = require('koa-static');
 const mount = require('koa-mount');
 const app = new koa();
 
@@ -44,8 +42,6 @@ app.use(async (ctx, next) => {
     await next();
   }
 });
-
-app.use(static(path.resolve(__dirname, '../public')));
 
 app.use(mount('/api', router.routes()), router.allowedMethods());
 
