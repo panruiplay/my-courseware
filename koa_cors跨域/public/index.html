@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./lib/axios.min.js"></script>
+</head>
+<body>
+
+<button onclick="simple()">简单请求</button>
+
+<button onclick="complex()">复杂请求</button>
+
+<script>
+  function simple() {
+    axios.get('http://localhost:8887/api/sss', {})
+      .then((reset) => {
+        console.log(reset.data);
+      });
+  }
+
+  function complex() {
+    axios.post('http://localhost:8887/api/asdf', {
+      data: {
+        asdf: 1
+      }
+    })
+      .then((reset) => {
+        console.log(reset.data);
+      });
+  }
+</script>
+
+</body>
+</html>
