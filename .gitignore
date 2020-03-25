@@ -8,7 +8,6 @@ yarn-error.log*
 **/package-lock.json
 **/yarn.lock
 
-
 # Runtime data
 pids
 *.pid
@@ -60,4 +59,4 @@ typings/
 .yarn-integrity
 
 # next.js build output
-.next
+.next 
